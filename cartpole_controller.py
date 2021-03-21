@@ -26,7 +26,6 @@ class LocalLinearizationController:
         assert u.shape == (1,)
         env = self.env
         env.reset(state=x)
-        env.step(u)
         observation, cost, done, info = env.step(u)
         return cost
 
