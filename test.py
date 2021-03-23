@@ -3,14 +3,14 @@ import numpy as np
 from cartpole_controller import LocalLinearizationController
 from env.cartpole_control_env import CartPoleControlEnv
 
-init_states = [np.array([0, 0, 0, 0]),
-        np.array([0, 0, 0.2, 0]),
-        np.array([0, 0, 0.4, 0]),
-        np.array([0, 0, 0.6, 0]),
-        np.array([0, 0, 0.8, 0]),
-        np.array([0, 0, 1.0, 0]),
-        np.array([0, 0, 1.2, 0]),
-        np.array([0, 0, 1.4, 0])]
+init_states = [np.array([0.0, 0.0, 0.0, 0.0]),
+        np.array([0.0, 0.0, 0.2, 0.0]),
+        np.array([0.0, 0.0, 0.4, 0.0]),
+        np.array([0.0, 0.0, 0.6, 0.0]),
+        np.array([0.0, 0.0, 0.8, 0.0]),
+        np.array([0.0, 0.0, 1.0, 0.0]),
+        np.array([0.0, 0.0, 1.2, 0.0]),
+        np.array([0.0, 0.0, 1.4, 0.0])]
 
 def test(init_state, x_s, u_s, T=500, num_episodes=100):
     env = gym.make("env:CartPoleControlEnv-v0")
